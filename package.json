@@ -1,0 +1,22 @@
+{
+  "name": "ddweb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "node src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "live-server",
+    "start": "http-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.8",
+    "bootstrap-icons": "^1.13.1",
+    "sass": "^1.93.2"
+  }
+}
