@@ -13,17 +13,4 @@ document.addEventListener('DOMContentLoaded', function() {
             this.reset();
         });
     }
-
-    const audio = document.getElementById('myAudio');
-    const playPauseButton = document.getElementById('playPauseButton');
-
-    playPauseButton.addEventListener('click', function() {
-    if (audio.paused) {
-        audio.play();
-        playPauseButton.textContent = 'Pause Song';
-    } else {
-        audio.pause();
-        playPauseButton.textContent = 'Play Song';
-    }
-    });
-});
+})
