@@ -19,7 +19,7 @@
         }
         
         header {
-            background-color: orange;
+            background-color: #F97300;
             color: white;
             padding: 10px 0;
             position: stretch;
@@ -33,9 +33,10 @@
             display: flex;
             justify-content: space-between;
             align-items: stretch;
+            background:#F97300;
         }
         
-        .logo {
+        /* .logo {
             text-decoration: none;
             font-size: 1.3rem;
             font-weight: 400;
@@ -43,9 +44,17 @@
             margin-top: 10px;
             text-align: center;
 
-        }
-        
-        .nav-links {
+        } */
+        .navbar{ background:#F97300;}
+
+        .nav-link , .navbar-brand{ color: #f4f4f4; cursor: pointer;}
+
+        .nav-link{ margin-right: 1em !important;}
+
+        .nav-link:hover{ color: gray; }
+
+        .navbar-collapse{ justify-content: flex-end;}
+        /* .nav-links {
             display: flex;
             list-style: none;
             text-align: center;
@@ -64,10 +73,8 @@
             font-weight: 400;
             transition: color 0.3s;
         }
-        
-        .nav-links a:hover {
-            color: red;
-        }
+         */
+
 
         .card {
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -106,7 +113,7 @@
             font-family:Arial, Helvetica, sans-serif;
             font-size: 3rem;
             margin-bottom: 20px;
-            color: orange;
+            color: #F97300;
         }
         
         .hero p {
@@ -157,10 +164,10 @@
         
         .about-img img {
             object-fit: cover;
-            width: 300px;
-            height: 300px;
-            max-width: 300px;
-            max-height: 300px;
+            width: 250px;
+            height: 250px;
+            max-width: 250px;
+            max-height: 250px;
             border-radius: 50%;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         }
@@ -168,18 +175,16 @@
         .about-text {
             flex: 1;
             padding-right: 10%;
-            padding-left: 30px;
+            /* padding-left: 30px; */
         }
         
         .about-text h3 {
             font-size: 2rem;
-            color: #2c3e50;
             margin-bottom: 20px;
         }
         
         .about-text p {
             margin-bottom: 20px;
-            color: #555;
         }
         
         .role {
@@ -190,7 +195,7 @@
         }
         
         footer {
-            background-color:orange;
+            background-color:#F97300;
             color: white;
             padding: 30px 0;
             text-align: center;
@@ -230,8 +235,8 @@
             background: #F97300;
             color: #fff;
             text-align: center;
-            border-bottom-left-radius: 890%;
-            transition:.3s ease-in-out;
+            border-bottom-left-radius: 93%;
+            
         }
         
         .team .item:hover .des{
@@ -241,7 +246,9 @@
             width: 92%;
             padding: 5em;
             top: 0;
+            bottom: 0;
             border-bottom-left-radius: 0;
+            transition:1s ease-in-out;
         }
         @media (max-width: 768px) {
             .about-content {

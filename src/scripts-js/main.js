@@ -13,4 +13,8 @@ document.addEventListener('DOMContentLoaded', function() {
             this.reset();
         });
     }
+    $(document).ready(function(){
+        $('.header').height($(window).height());
+
+        })
 })

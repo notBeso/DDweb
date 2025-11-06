@@ -8,61 +8,69 @@
     <link href="../css/style.css" rel="stylesheet">
 
 </head>
-<body>
+<body style="background-color: ghostwhite;">
     <header>
-        <div class="container">
-            <nav>
-                <div class="logo" style="padding-top: 10px;">
-                    <P>MyWebsite</P>
-                </div>
-                <ul class="nav-links" style="font-weight: 400;padding-top: 10px">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#team">Team</a></li>
-                    <li><a href="#post">Post</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav class="navbar navbar-expand-lg fixed-top ">  
+        <a class="navbar-brand" href="#" style="padding-left: 3%;">MyWebsite</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">  
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav mr-4">
+                <li class="nav-item">
+                    <a class="nav-link" data-value="about" href="#about">About</a>        
+                </li>  
+                <li class="nav-item">
+                    <a class="nav-link " data-value="portfolio"href="#portfolio">Portfolio</a>    
+                </li>
+                <li class="nav-item"> 
+                    <a class="nav-link " data-value="blog" href="#blog">Blog</a>         
+                </li>   
+                <li class="nav-item">  
+                    <a class="nav-link " data-value="team" href="#team">Team</a>       
+                </li>  
+                <li class="nav-item"> 
+                    <a class="nav-link " data-value="contact" href="#contact">Contact</a>       
+                </li> 
+            </ul> 
+    </div></nav>
     </header>
 
     <section class="hero" id="home">
-        <div class="container" style="text-align: left; padding-left: 10%">
-            <h3>Hello, Welcome To My Official WEBSITE</h3>
-            <p style="color: gray;">
+        <div class="container" style="text-align: left; padding-left: 8%">
+            <h1 style="color:#F97300 ; font-size: 200;">Hello, Welcome To My Official WEBSITE</h1>
+            <p style=" color:#666; font-size: 20px; width: 50%; line-height: 1.5;;">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco 
                 aboris nisi ut aliquip ex ea commodo consequat. 
-                Duis aute irure dolor in reprehenderit in voluptate velit 
-                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                occaecat cupidatat non proident, sunt in culpa qui officia 
                 deserunt mollit anim id est laborum.
             </p>
-            <button style="background-color: orange;border: none;
+            <!-- <button style="background-color: #F97300;border: none;
             color: white;padding: 15px 32px;
             text-align: center;
             text-decoration: none;
             display: inline-block;
-            border-radius: 5px;">
+            border-radius: 5px;"> -->
+            <button class="btn btn-outline-secondary btn-lg" style="border:1px  solid #F97300; background:#F97300; color:#fff;">
                 See More
             </button>
         </div>
     </section>
 
-    <section class="about" id="about">
-        <div class="container">
+    <section class="about" id="about" style="background-color: ghostwhite;">
+        <div class="container" style="background-color: ghostwhite;">
             <div>
-                <h2 style="text-align:center;margin-bottom: 3.5rem;color: orange;">About Me</h2>
+                <h2 style="text-align:center;margin-bottom: 3.5rem;color: #F97300;">About Me</h2>
             </div>
             <div class="about-content">
-                <div class="about-img">
-                    <img src="../images/ava1.png" alt="avatar" style="width:100%">
-                    <p>S.Web Developer</p>
+                <div class="about-img" >
+                    <img src="../images/ava1.png" alt="avatar">
+                    <p style="color: #666;font-size: medium;">S.Web Developer</p>
                 </div>
-                <div class="about-text" style="padding-right: 10%;padding-left: 30px;border-left: 6px solid #3498db;">
-                    <h3 style="color: #3498db;">D John</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Consectetur adipiscing 
+                <div class="about-text " style="padding-right: 10%;padding-left: 30px;border-left:4px solid #10828C;">
+                    <h3 style="color: #10828C;">D John</h3>
+                    <p style="color: #666;font-size: small;">Lorem ipsum dolor sit amet consectetur adipiscing elit. Consectetur adipiscing 
                         elit quisque faucibus ex sapien vitae. Ex sapien vitae pellentesque sem placerat in id. 
                         Placerat in id cursus mi pretium tellus duis. Pretium tellus duis convallis tempus leo eu aenean.
                         Lorem ipsum dolor sit amet consectetur adipiscing elit. Consectetur adipiscing 
@@ -77,13 +85,13 @@
     <!-- PORTFOLIO Section -->
     <section id="portfolio" class="py-5" style="padding-left: 10%; padding-right: 10%;">
         <div class="container">
-            <h2 style="text-align:center;margin-bottom: 3.5rem;color: orange;">Portfolio</h2>
+            <h2 style="text-align:center;margin-bottom: 3.5rem;color: #F97300;">Portfolio</h2>
             <div class="row g-4">
                 <div class="col-md-4">
                     <div class="card h-100">
                         <div> 
                             <a href="">
-                                <img src="https://picsum.photos/150" alt="Portfolio Item1" style="width:100%">
+                                <img src="https://picsum.photos/200/140?random=1" alt="Portfolio Item1" style="width:100%">
                             </a>
                         </div>
                     </div>
@@ -92,7 +100,7 @@
                     <div class="card h-100">
                         <div>
                             <a href="">
-                                <img src="https://picsum.photos/150" alt="Portfolio Item2" style="width:100%">
+                                <img src="https://picsum.photos/200/140?random=2" alt="Portfolio Item2" style="width:100%">
                             </a>
                         </div>
                     </div>
@@ -101,7 +109,7 @@
                     <div class="card h-100">
                         <div>
                             <a href="">
-                                <img src="https://picsum.photos/150" alt="Portfolio Item3" style="width:100%">
+                                <img src="https://picsum.photos/200/140?random=3" alt="Portfolio Item3" style="width:100%">
                             </a>
                         </div>
                     </div>
@@ -110,7 +118,7 @@
                     <div class="card h-100">
                         <div> 
                             <a href="">
-                                <img src="https://picsum.photos/150" alt="Portfolio Item4" style="width:100%">
+                                <img src="https://picsum.photos/200/140?random=4" alt="Portfolio Item4" style="width:100%">
                             </a>
                         </div>
                     </div>
@@ -119,7 +127,7 @@
                     <div class="card h-100">
                         <div>
                             <a href="">
-                                <img src="https://picsum.photos/150" alt="Portfolio Item5" style="width:100%">
+                                <img src="https://picsum.photos/200/140?random=5" alt="Portfolio Item5" style="width:100%">
                             </a>
                         </div>
                     </div>
@@ -128,7 +136,7 @@
                     <div class="card h-100">
                         <div>
                             <a href="">
-                                <img src="https://picsum.photos/150" alt="Portfolio Item6" style="width:100%">
+                                <img src="https://picsum.photos/200/140?random=6" alt="Portfolio Item6" style="width:100%">
                             </a>
                         </div>
                     </div>
@@ -137,7 +145,7 @@
                     <div class="card h-100">
                         <div> 
                             <a href="">
-                                <img src="https://picsum.photos/150" alt="Portfolio Item7" style="width:100%">
+                                <img src="https://picsum.photos/200/140?random=7" alt="Portfolio Item7" style="width:100%">
                             </a>
                         </div>
                     </div>
@@ -146,7 +154,7 @@
                     <div class="card h-100">
                         <div>
                             <a href="">
-                                <img src="https://picsum.photos/150" alt="Portfolio Item8" style="width:100%">
+                                <img src="https://picsum.photos/200/140?random=8" alt="Portfolio Item8" style="width:100%">
                             </a>
                         </div>
                     </div>
@@ -155,7 +163,7 @@
                     <div class="card h-100">
                         <div>
                             <a href="">
-                                <img src="https://picsum.photos/150" alt="Portfolio Item9" style="width:100%">
+                                <img src="https://picsum.photos/200/140?random=9" alt="Portfolio Item9" style="width:100%">
                             </a>
                         </div>
                     </div>
@@ -165,48 +173,48 @@
     </section>
 
     <!-- BLOG Section -->
-    <section id="post" class="py-5" style="padding-left: 10%; padding-right: 10%;">
+    <section id="blog" class="py-5" style="padding-left: 10%; padding-right: 10%;">
         <div class="container">
-            <h2 style="text-align:center;margin-bottom: 3.5rem;color: orange;">Blog</h2>
+            <h2 style="text-align:center;margin-bottom: 3.5rem;color: #F97300;">Blog</h2>
                 <div class="row g-4">
                 <div class="col-md-4">
                     <div class="card h-100">
-                        <img src="../images/card.jpg" alt="post1" style="width:100%">
-                        <div class="container" style="padding-left:3%;padding-top: 3%;">
-                            <h4 style="color: orange;"><b>Post Title</b></h4>
-                            <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+                        <img src="https://picsum.photos/200/100?random=10" alt="post1" style="width:100%">
+                        <div class="container" style="padding-left:5%;padding-top: 5%;">
+                            <h4 style="color: #F97300;font-weight: 100px; font-size: 20px;"><b>Post Title</b></h4>
+                            <p style="color: #666;font-size: 15px;">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
                             <a href="" target="_blank">
                             </a>
                         </div>
-                        <button id="" style="width: 100%; color: #3498db; text-align: left;padding-left:3%;padding-bottom:2%;padding-top: 2%; border: none;">
+                        <button id="" style="width: 100%; color: #3498db; text-align: left;padding-left:5%;padding-bottom:2%;padding-top: 2%; border: none;font-weight: 100px; font-size: 15px;">
                             Read More
                         </button>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card h-100">
-                        <img src="../images/card.jpg" alt="post2" style="width:100%">
-                        <div class="container" style="padding-left:3%;padding-top: 3%;">
-                            <h4 style="color: orange;"><b>Post Title</b></h4>
-                            <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+                        <img src="https://picsum.photos/200/100?random=11" alt="post2" style="width:100%">
+                        <div class="container" style="padding-left:5%;padding-top: 5%;">
+                            <h4 style="color: #F97300;font-weight: 100px; font-size: 20px;"><b>Post Title</b></h4>
+                            <p style="color: #666; font-size: 15px;">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
                             <a href="" target="_blank">
                             </a>
                         </div>
-                        <button id="" style="width: 100%; color: #3498db; text-align: left;padding-left:3%;padding-bottom:2%;padding-top:2%;border: none;">
+                        <button id="" style="width: 100%; color: #3498db; text-align: left;padding-left:5%;padding-bottom:2%;padding-top:2%;border: none;font-weight: 100px; font-size: 15px;">
                             Read More
                         </button>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card h-100">
-                        <img src="../images/card.jpg" alt="post3" style="width:100%">
-                        <div class="container" style="padding-left:3%;padding-top: 3%;">
-                            <h4 style="color: orange;"><b>Post Title</b></h4>
-                            <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+                        <img src="https://picsum.photos/200/100?random=12" alt="post3" style="width:100%">
+                        <div class="container" style="padding-left:5%;padding-top: 5%;">
+                            <h4 style="color: #F97300;font-weight: 100px; font-size: 20px;"><b>Post Title</b></h4>
+                            <p style="color: #666;font-size: 15px;">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
                             <a href="" target="_blank">
                             </a>
                         </div>
-                        <button id="" style="width: 100%; color: #3498db; text-align: left;padding-left:3%;padding-bottom:2%;padding-top:2%;border: none;">
+                        <button id="" style="width: 100%; color: #3498db; text-align: left;padding-left:5%;padding-bottom:2%;padding-top:2%;border: none;font-weight: 100px; font-size: 15px;">
                             Read More
                         </button>
                     </div>
@@ -219,7 +227,6 @@
     <section id="team" class="py-5" style="padding-left: 10%; padding-right: 10%;">
         <div class="team">
             <div class="container">
-                <h1 class="text-center">Our Team</h1>
             <div class="row">
             <div class="col-lg-3 col-md-3 col-sm-12 item">
                 <img src="../images/ava1.png" class="img-fluid" alt="team">
@@ -253,29 +260,61 @@
             </div>
             </div>
     </section>
+    <!-- <div class="team">
+ <div class="container">
+    <h1 class="text-center">Our Team</h1>
+  <div class="row">
+   <div class="col-lg-3 col-md-3 col-sm-12 item">
+    <img src="../images/ava1.png" class="img-fluid" alt="team">
+    <div class="des">
+      Sara
+     </div>
+    <span class="text-muted">Manager</span>
+   </div>
+   <div class="col-lg-3 col-md-3 col-sm-12 item">
+    <img src="../images/ava1.png" class="img-fluid" alt="team">
+    <div class="des">
+       Chris
+     </div>
+    <span class="text-muted">S.enginner</span>
+   </div>
+   <div class="col-lg-3 col-md-3 col-sm-12 item">
+    <img src="../images/ava1.png" class="img-fluid" alt="team">
+    <div class="des">
+      Layla 
+     </div>
+    <span class="text-muted">Front End Developer</span>
+   </div>
+   <div class="col-lg-3 col-md-3 col-sm-12 item">
+    <img src="images/team-3.jpg" class="img-fluid" alt="team">
+     <div class="des">
+      J.Jirard
+     </div>
+    <span class="text-muted">Team Manger</span>
+   </div>
+  </div>
+ </div>
+</div> -->
 
     <!-- Contact Section -->
     <section id="contact" class="py-5" style="padding-left: 10%; padding-right: 10%;">
         <div class="container">
             <div class="about-content">
                 <div class="about-img" style="max-width: 30%;">
-                    <h2 style="text-align:center;color: orange;">Get In Touch</h2>
+                    <h2 style="text-align:center;color: #F97300;font-size: 30px;">Get In Touch</h2>
                 </div>
                 <div class="about-text" style="max-width: 70%;">
                     <form>
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="name" required>
+                        <div class="mb-3" style="color: #666;font-size: 1px;">
+                            <input type="text" class="form-control" id="name" required placeholder="YourName" >
                         </div>
                         <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" required>
+                            <input type="email" class="form-control" id="email" required placeholder="YourEmail@gmail.com">
                         </div>
                         <div class="mb-3">
-                            <label for="message" class="form-label">Message</label>
                             <textarea class="form-control" id="message" rows="5" required></textarea>
                         </div>
-                        <button type="submit" style="background-color: orange; text-align: center; width: 100%;border: none;color: white;border-radius: 5px;">Send</button>
+                        <button type="submit" style="background-color: #F97300; text-align: center; width: 100%;border: none;color: white;border-radius: 2px;">Send</button>
                     </form>
                 </div>
             </div>
